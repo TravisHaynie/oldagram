@@ -4,20 +4,21 @@
      border: 7px solid black;
      border-radius: 30px;
      background-color: #FFFFFF;
+     font-family: "Source Sans 3", serif;
  }
 
  header {
      display: flex;
 
      justify-content: space-between;
-     padding: 20px 10px;
+     padding: 0px 20px;
      border-bottom: 1px solid black;
  }
 
 
 
  .logo {
-     width: 170px;
+     width: 300px;
  }
 
  .per-img,
@@ -26,29 +27,34 @@
  }
 
  .per-img {
-     width: 80px;
+     width: 60px;
+     margin-top: 40px;
  }
 
  .flex-container-post {
      display: flex;
-     padding-top: 120px;
+     padding-top: 10px;
  }
 
  .post-creator {
-     width: 80px;
+     width: 70px;
      padding: 20px;
  }
 
  .posted-name,
  .posted-destination {
-     font-size: 2.25rem;
      margin: 0;
      line-height: 36px;
  }
 
+ .posted-destination {
+    font-size:1.75rem;
+ }
+
  .posted-name {
+     font-size: 2rem;
      font-weight: 900;
-     padding-top: 27px;
+     padding-top: 20px;
  }
 
  .posted-img {
@@ -75,7 +81,7 @@
      background-color: brown;
      border-radius: 10px;
      width: 45px;
-     padding:15px;
+     padding: 15px;
 
  }
 
@@ -86,9 +92,17 @@
 
  .likes,
  .comments {
-     padding: 10px 0px 10px 25px;
      font-size: 2rem;
      margin: 0;
+ }
+
+ .likes {
+     padding: 10px 0px 10px 25px;
+ }
+
+ .comments {
+     padding: 10px 0px 100px 25px;
+
  }
 
  .span-name {
