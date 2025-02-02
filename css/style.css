@@ -1,87 +1,97 @@
  body {
-    margin: 0;
-    padding: 0;
-    border:7px solid black;
-    border-radius:30px;
-}
+     margin: 0;
+     padding: 0;
+     border: 7px solid black;
+     border-radius: 30px;
+     background-color: #FFFFFF;
+ }
 
-header{
-    display: flex;
-  
-    justify-content: space-between;
-    padding: 20px 10px;
-    border-bottom: 2px solid gray;
-}
+ header {
+     display: flex;
 
-.logo {
-    width: 170px;
-}
-
-.per-img, .post-creator {
-    border-radius: 100px;
-}
-
-.per-img {
-    width: 80px;
-}
-
-.flex-container-post {
-    display: flex;
-    padding-top:40px;
-}
-
-.post-creator {
-    width: 80px;
-    padding: 20px;
-}
-
-.posted-name, .posted-destination {
-    font-size:2.25rem;
-    margin:0;
-    line-height: 36px;
-}
-
-.posted-name {
-    font-weight: 900;
-    padding-top:27px;
-}
+     justify-content: space-between;
+     padding: 20px 10px;
+     border-bottom: 1px solid black;
+ }
 
 
-.posted-img {
-    width: 100%;
-    padding: 0;
-    border:none
-}
 
-.content-section {
-    display: flex;
-    flex-direction: column;
-}
+ .logo {
+     width: 170px;
+ }
 
-.icon-heart, .icon-comment, .icon-dm {
-    width: 50px;
-    padding:15px
-}
+ .per-img,
+ .post-creator {
+     border-radius: 100px;
+ }
 
-.icon-heart:hover, .icon-comment:hover, .icon-dm:hover{
-    background-color: brown;
-    border-radius: 10px;
-    width: 45px;
+ .per-img {
+     width: 80px;
+ }
 
-}
+ .flex-container-post {
+     display: flex;
+     padding-top: 120px;
+ }
 
-.heart {
-    background-color: white;
-    border:none
-}
+ .post-creator {
+     width: 80px;
+     padding: 20px;
+ }
 
-.likes, .comments {
-    padding:15px;
-    font-size: 2rem;
-    margin:0;
-}
+ .posted-name,
+ .posted-destination {
+     font-size: 2.25rem;
+     margin: 0;
+     line-height: 36px;
+ }
 
-.span-name {
-    font-weight: 900;
-    margin:0;
-}
+ .posted-name {
+     font-weight: 900;
+     padding-top: 27px;
+ }
+
+ .posted-img {
+     width: 100%;
+     padding: 0;
+     border: none
+ }
+
+ .content-section {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .icon-heart,
+ .icon-comment,
+ .icon-dm {
+     width: 50px;
+     padding: 50px 15px 10px 15px;
+ }
+
+ .icon-heart:hover,
+ .icon-comment:hover,
+ .icon-dm:hover {
+     background-color: brown;
+     border-radius: 10px;
+     width: 45px;
+     padding:15px;
+
+ }
+
+ .heart {
+     background-color: white;
+     border: none
+ }
+
+ .likes,
+ .comments {
+     padding: 10px 0px 10px 25px;
+     font-size: 2rem;
+     margin: 0;
+ }
+
+ .span-name {
+     font-weight: 900;
+     margin: 0;
+ }

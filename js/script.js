@@ -1,7 +1,5 @@
-let likeEl = document.getElementById("like-el");
 let btnEl = document.getElementById("btn-el");
-let commentEl = document.getElementById("comment-el");
-let counter = 0;
+let counter = 21;
 const postSection = document.getElementById("post-section");
 const posts = [
     {
@@ -22,7 +20,7 @@ const posts = [
         comment: "i'm feelin a bit stressed tbh",
         likes: 4
     },
-        {
+    {
         name: "Joseph Ducreux",
         username: "jd1735",
         location: "Paris, France",
@@ -32,12 +30,12 @@ const posts = [
         likes: 152
     }
 ]
-  
+
 
 function renderAllPostsToThePage() {
- 
+    postSection.innerHTML =" "
 
-    for(let i = 0; i < posts.length; i++) {
+    for (let i = 0; i < posts.length; i++) {
         postSection.innerHTML += `  <div class="flex-container-post">
                                         <div>
                                         <img class="post-creator" src=${posts[i].avatar}> 
@@ -47,21 +45,23 @@ function renderAllPostsToThePage() {
                                         <p class="posted-destination">${posts[i].location}</p>
                                         </div>
                                     </div>
-                                    <div class="vangogh-post-img ">
+                                    <div>
                                         <button class="posted-img"><img class="posted-img" src=${posts[i].post}></button>
+                                        <button class="heart" title="button" id="btn-el"><img class="icon-heart" src="img/icon-heart.png" alt="a picture of a heart logo"></button>
+                                        <img class="icon-comment" src="img/icon-comment.png" alt="a picture of a comment logo">
+                                        <img class="icon-dm" src="img/icon-dm.png" alt="a picture of an arrow logo">
+                                        <p class="likes" id="like-el">${posts[i].likes} likes</p>
+                                        <p class="comments"><span class="span-name">${posts[i].username}</span> ${posts[i].comment}</p>
                                     <div>`
-                                    
-       likeEl.innerHTML += `${posts[i].likes}`
-      commentEl.innerHTML += `${posts[i].comment}`
+
+
     }
 }
 
 renderAllPostsToThePage()
 
-postSection.addEventListener("click" ,function() {
-
-    console.log(counter)
-    counter ++;
-    likeEl.textContent = counter;
-    
+postSection.addEventListener("click", function () {
+    const likeEl = document.getElementById("like-el");
+    counter++;
+    likeEl.textContent = counter + " " + "likes";
 })
