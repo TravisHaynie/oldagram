@@ -1,4 +1,4 @@
-let btnEl = document.getElementById("btn-el");
+const btnEl = document.getElementById("btn-el");
 let counter = 21;
 const postSection = document.getElementById("post-section");
 const posts = [
@@ -29,20 +29,19 @@ const posts = [
         comment: "gm friends! which coin are YOU stacking up today?? post below and WAGMI!",
         likes: 152
     }
-]
+];
 
 
 function renderAllPostsToThePage() {
-    postSection.innerHTML =" "
-
+    
     for (let i = 0; i < posts.length; i++) {
         postSection.innerHTML += `  <div class="flex-container-post">
                                         <div>
-                                        <img class="post-creator" src=${posts[i].avatar}> 
+                                            <img class="post-creator" src=${posts[i].avatar}> 
                                         </div>
                                         <div>
-                                        <p class="posted-name">${posts[i].name}</p>
-                                        <p class="posted-destination">${posts[i].location}</p>
+                                            <p class="posted-name">${posts[i].name}</p>
+                                            <p class="posted-destination">${posts[i].location}</p>
                                         </div>
                                     </div>
                                     <div>

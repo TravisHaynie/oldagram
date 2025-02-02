@@ -1,21 +1,16 @@
  body {
      margin: 0;
-     padding: 0;
      border: 7px solid black;
      border-radius: 30px;
-     background-color: #FFFFFF;
      font-family: "Source Sans 3", serif;
  }
 
  header {
      display: flex;
-
      justify-content: space-between;
      padding: 0px 20px;
      border-bottom: 1px solid black;
  }
-
-
 
  .logo {
      width: 300px;
@@ -24,10 +19,10 @@
  .per-img,
  .post-creator {
      border-radius: 100px;
+     width: 70px;
  }
 
  .per-img {
-     width: 60px;
      margin-top: 40px;
  }
 
@@ -37,7 +32,6 @@
  }
 
  .post-creator {
-     width: 70px;
      padding: 20px;
  }
 
@@ -48,7 +42,7 @@
  }
 
  .posted-destination {
-    font-size:1.75rem;
+     font-size: 1.75rem;
  }
 
  .posted-name {
