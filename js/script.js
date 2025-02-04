@@ -32,7 +32,7 @@ const posts = [
 ];
 
 
-function renderAllPostsToThePage() {
+function appendAllPostsToThePage() {
 
     for (let i = 0; i < posts.length; i++) {
         postSection.innerHTML += 
@@ -66,7 +66,7 @@ function renderAllPostsToThePage() {
     }
 }
 
-renderAllPostsToThePage()
+appendAllPostsToThePage()
 
 
 function likesIncremented() {
