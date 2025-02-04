@@ -1,6 +1,6 @@
-const btnEl = document.getElementById("btn-el");
 let counter = 21;
 const postSection = document.getElementById("post-section");
+
 const posts = [
     {
         name: "Vincent van Gogh",
@@ -33,25 +33,34 @@ const posts = [
 
 
 function renderAllPostsToThePage() {
-    
+
     for (let i = 0; i < posts.length; i++) {
-        postSection.innerHTML += `  <div class="flex-container-post">
-                                        <div>
-                                            <img class="post-creator" src=${posts[i].avatar}> 
-                                        </div>
-                                        <div>
-                                            <p class="posted-name">${posts[i].name}</p>
-                                            <p class="posted-destination">${posts[i].location}</p>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <button class="posted-img"><img class="posted-img" src=${posts[i].post}></button>
-                                        <button class="heart" title="button" id="btn-el"><img class="icon-heart" src="img/icon-heart.png" alt="a picture of a heart logo"></button>
-                                        <img class="icon-comment" src="img/icon-comment.png" alt="a picture of a comment logo">
-                                        <img class="icon-dm" src="img/icon-dm.png" alt="a picture of an arrow logo">
-                                        <p class="likes" id="like-el">${posts[i].likes} likes</p>
-                                        <p class="comments"><span class="span-name">${posts[i].username}</span> ${posts[i].comment}</p>
-                                    <div>`
+        postSection.innerHTML += 
+                                `  
+                                    <article>
+                                        <section class="flex-container-post"> 
+                                            <div>
+                                                <img class="post-creator" src=${posts[i].avatar}> 
+                                            </div>
+                                            <div>
+                                                <p class="posted-name">${posts[i].name}</p>
+                                                <p class="posted-destination">${posts[i].location}</p>
+                                            </div>
+                                        </section>
+                                        <section>
+                                            <button class="posted-img">
+                                                <img class="posted-img" src=${posts[i].post}>
+                                            </button>
+                                            <button class="heart" title="button" id="btn-el" >
+                                                <img class="icon-heart" src="img/icon-heart.png" alt="a picture of a heart logo">
+                                            </button>
+                                            <img class="icon-comment" src="img/icon-comment.png" alt="a picture of a comment logo">
+                                            <img class="icon-dm" src="img/icon-dm.png" alt="a picture of an arrow logo">
+                                            <p class="likes" id="like-el">${posts[i].likes} likes</p>
+                                            <p class="comments"><span class="span-name">${posts[i].username}</span> ${posts[i].comment}</p>
+                                        <section>
+                                    </article>
+                                `
 
 
     }
@@ -59,8 +68,15 @@ function renderAllPostsToThePage() {
 
 renderAllPostsToThePage()
 
-postSection.addEventListener("click", function () {
+
+function likesIncremented() {
     const likeEl = document.getElementById("like-el");
     counter++;
     likeEl.textContent = counter + " " + "likes";
+}
+
+const btnEl = document.getElementById("btn-el");
+
+btnEl.addEventListener("click", function () {
+    likesIncremented()
 })

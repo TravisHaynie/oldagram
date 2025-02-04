@@ -1,105 +1,105 @@
  body {
-     margin: 0;
-     border: 7px solid black;
-     border-radius: 30px;
-     font-family: "Source Sans 3", serif;
+    margin: 0;
+    border: 7px solid black;
+    border-radius: 30px;
+    font-family: "Source Sans 3", serif;
  }
 
  header {
-     display: flex;
-     justify-content: space-between;
-     padding: 0px 20px;
-     border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    border-bottom: 1px solid black;
  }
 
  .logo {
-     width: 300px;
+    width: 300px;
  }
 
  .per-img,
  .post-creator {
-     border-radius: 100px;
-     width: 70px;
+    border-radius: 100px;
+    width: 70px;
  }
 
  .per-img {
-     margin-top: 40px;
+    margin-top: 40px;
  }
 
  .flex-container-post {
-     display: flex;
-     padding-top: 10px;
+    display: flex;
+    padding-top: 10px;
  }
 
  .post-creator {
-     padding: 20px;
+    padding: 20px;
  }
 
  .posted-name,
  .posted-destination {
-     margin: 0;
-     line-height: 36px;
+    margin: 0;
+    line-height: 36px;
  }
 
  .posted-destination {
-     font-size: 1.75rem;
+    font-size: 1.75rem;
  }
 
  .posted-name {
-     font-size: 2rem;
-     font-weight: 900;
-     padding-top: 20px;
+    font-size: 2rem;
+    font-weight: 900;
+    padding-top: 20px;
  }
 
  .posted-img {
-     width: 100%;
-     padding: 0;
-     border: none
+    width: 100%;
+    padding: 0;
+    border: none
  }
 
  .content-section {
-     display: flex;
-     flex-direction: column;
+    display: flex;
+    flex-direction: column;
  }
 
  .icon-heart,
  .icon-comment,
  .icon-dm {
-     width: 50px;
-     padding: 50px 15px 10px 15px;
+    width: 50px;
+    padding: 50px 15px 10px 15px;
  }
 
  .icon-heart:hover,
  .icon-comment:hover,
  .icon-dm:hover {
-     background-color: brown;
-     border-radius: 10px;
-     width: 45px;
-     padding: 15px;
+    background-color: brown;
+    border-radius: 10px;
+    width: 45px;
+    padding: 15px;
 
  }
 
  .heart {
-     background-color: white;
-     border: none
+    background-color: white;
+    border: none
  }
 
  .likes,
  .comments {
-     font-size: 2rem;
-     margin: 0;
+    font-size: 2rem;
+    margin: 0;
  }
 
  .likes {
-     padding: 10px 0px 10px 25px;
+    padding: 10px 0px 10px 25px;
  }
 
  .comments {
-     padding: 10px 0px 100px 25px;
+    padding: 10px 0px 100px 25px;
 
  }
 
  .span-name {
-     font-weight: 900;
-     margin: 0;
+    font-weight: 900;
+    margin: 0;
  }
